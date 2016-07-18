@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="starter">
+<head>
+     <meta charset='utf-8'>
+     <title>Starter Angular Site</title>
+
+    <meta name='description' content='Starter Angular App'>
+    <meta name='author' content='Jake Boyles'>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!--CSS style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="https://use.fontawesome.com/247c14072a.js"></script>
+</head>
+
+<body id="body">
+    <div class="container-fluid">
+        <div class="header row">
+            
+       </div>
+
+        <div ui-view="main">
+        </div>
+
+    </div>
+    <!--link to JS file-->
+    <script src="//cdn.backand.net/backand/dist/1.8.2/backand.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/factories/api.js"></script>
+    <script src="js/factories/backand.js"></script>
+    <script src="js/factories/fileUpload.js"></script>
+    <script src="js/directives/directive.js"></script>
+    <script src="js/controllers/mainControl.js"></script>
+</body>
+</html>
