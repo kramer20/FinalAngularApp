@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang='en' ng-app="starter">
+<html lang='en' ng-app="games">
 <head>
      <meta charset='utf-8'>
-     <title>Starter Angular Site</title>
+     <title>Drinking Game App</title>
 
     <meta name='description' content='Starter Angular App'>
     <meta name='author' content='Jake Boyles'>
@@ -17,12 +17,20 @@
 	<script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="https://use.fontawesome.com/247c14072a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
 </head>
 
 <body id="body">
     <div class="container-fluid">
         <div class="header row">
-            
+            <div class="col-md-4 iconCol">
+                <h1 class="appName">Drinking<br>Games</h1>
+                <img class="logo" src="images/dice.png">
+            </div> 
+
+             <div class="col-md-8 navBar" ui-view="nav">
+                
+            </div> 
        </div>
 
         <div ui-view="main">

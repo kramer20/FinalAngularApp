@@ -1,10 +1,10 @@
-(function() {
-    'use strict';
+// (function() {
+//     'use strict';
     
-    angular
-    .module('starter')
-    .controller('MainController', function(API) {
-       var vm = this;
+//     angular
+//     .module('games')
+//     .controller('MainController', function(API) {
+//        var vm = this;
       
-    });
-})();
+//     });
+// })();

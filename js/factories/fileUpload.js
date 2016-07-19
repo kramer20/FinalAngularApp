@@ -1,7 +1,7 @@
 // (function () {
 // 	'use strict';
 // 	angular
-// 		.module('starter')
+// 		.module('games')
 // 		.factory('fileUpload', function($http,Backand,$q) {
 
 // 		const baseUrl = '/1/objects/';

@@ -1,7 +1,7 @@
 // (function () {
 // 	'use strict';
 // 	angular
-// 		.module('starter')
+// 		.module('games')
 // 		 .factory('back', function($http,Backand) {
 
 

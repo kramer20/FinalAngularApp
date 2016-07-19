@@ -1,7 +1,31 @@
+$background:#EEEEEC;
+$title-font:'Fugaz One', cursive;
+$font-color:#FCD707;
+
+
+
+@import 'images';
+
+
 body{
-	background: white;
+	background:$background;
 	margin:0;
 	padding:0;
+}
+
+.header {
+	background:#03A6DC;
+
+}
+
+h1.appName {
+	font-family:$title-font;
+	color:$font-color;
+	font-size:40px;
+	display:inline-block;
+	margin-left:20px;
+	margin-right:-40px;
+	text-shadow: 4px 4px #02779E;
 }
 
 

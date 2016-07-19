@@ -1,4 +1,24 @@
+img.logo {
+  width: 140px;
+  margin: 0 auto;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transform: rotate(-7deg); }
+
 body {
-  background: white;
+  background: #EEEEEC;
   margin: 0;
   padding: 0; }
+
+.header {
+  background: #03A6DC; }
+
+h1.appName {
+  font-family: "Fugaz One", cursive;
+  color: #FCD707;
+  font-size: 40px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: -40px;
+  text-shadow: 4px 4px #02779E; }
