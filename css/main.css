@@ -2,17 +2,20 @@ ul.navItems li.navTop {
   display: inline-block; }
   ul.navItems li.navTop a {
     text-decoration: none;
-    color: #FCD707; }
+    color: #FCD707;
+    font-family: "Dosis", sans-serif;
+    font-size: 25px;
+    padding-left: 10px; }
     ul.navItems li.navTop a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #02779E; }
 
 img.logo {
   width: 140px;
   margin: 0 auto;
   display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  transform: rotate(-7deg); }
+  margin-top: 58px;
+  margin-bottom: 4px; }
 
 body {
   background: #EEEEEC;
@@ -20,7 +23,8 @@ body {
   padding: 0; }
 
 .header {
-  background: #03A6DC; }
+  background: #03A6DC;
+  border-bottom: 4px solid #02779E; }
 
 h1.appName {
   font-family: "Fugaz One", cursive;

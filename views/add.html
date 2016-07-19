@@ -1,13 +1,15 @@
 <h2 class="addTitle">Add a Game</h2>
 
-	<form>
-		<input class="form-control" type="text" placeholder="Title">
+	<form ng-submit="controller.submit()">
+		<input class="form-control" type="text" placeholder="Name" ng-model="controller.form.title">
 
-		<input class="form-control" type="text" placeholder="URL">
+		<input class="form-control" type="text" placeholder="Number of Players" ng-model="controller.form.players">
 
-		<input class="form-control" type="text" placeholder="Supplies">
+		<input class="form-control" type="text" placeholder="Buzz Level" ng-model="controller.form.buzz">
 
-		<textarea class="form-control" id="comment" placeholder="How To Play"></textarea>
+		<input class="form-control" type="text" placeholder="Supplies" ng-model="controller.form.supplies">
+
+		<textarea class="form-control" id="comment" placeholder="How To Play" ng-model="controller.form.rules"></textarea>
 
 		<button type="submit" class="btn btn-primary">Add</button>
 

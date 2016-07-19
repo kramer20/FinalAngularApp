@@ -5,9 +5,9 @@
         .config(function($stateProvider, $urlRouterProvider, BackandProvider) {
 
 
-		      BackandProvider.setAppName('inclasstestingapp');
-		      BackandProvider.setSignUpToken('38b3c98e-6e39-4eb4-9a53-353c5eccdccb');
-		      BackandProvider.setAnonymousToken('3616a886-e4a7-4edc-99d7-6433678e47fe');
+		      BackandProvider.setAppName('partystarters');
+		      BackandProvider.setSignUpToken('7954a5f3-35b7-495c-a763-712f09709704');
+		      BackandProvider.setAnonymousToken('81c97473-0cea-482c-a680-d6873c29567b');
 
 	  	$urlRouterProvider.otherwise("/");
 
@@ -37,22 +37,9 @@
             templateUrl: '../views/partials/nav.html',
           },
         },
-       })
-      .state('categories', {
-        url: '/categories',
-        views: {
-          'main': {
-            templateUrl: '../views/categories.html',
-            controller: 'CategoriesController',
-            controllerAs: 'controller'
-          },
-           'nav': {
-            templateUrl: '../views/partials/nav.html',
-          },
-        },
        }) 
        .state('detail', {
-        url: '/detail',
+        url: '/detail/:gamesid',
         views: {
           'main': {
             templateUrl: '../views/detail.html',
@@ -80,7 +67,7 @@
 
 	})
 
-        filter('to_trusted', ['$sce', function($sce){
+        .filter('to_trusted', ['$sce', function($sce){
         return function(text) {
             return $sce.trustAsHtml(text);
         };

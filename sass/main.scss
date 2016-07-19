@@ -1,6 +1,8 @@
 $background:#EEEEEC;
 $title-font:'Fugaz One', cursive;
 $font-color:#FCD707;
+$dark-blue:#02779E;
+$text-font:'Dosis', sans-serif;
 
 @import 'nav';
 @import 'images';
@@ -14,6 +16,7 @@ body{
 
 .header {
 	background:#03A6DC;
+	border-bottom:4px solid $dark-blue;
 
 }
 
@@ -24,7 +27,7 @@ h1.appName {
 	display:inline-block;
 	margin-left:20px;
 	margin-right:-40px;
-	text-shadow: 4px 4px #02779E;
+	text-shadow: 4px 4px $dark-blue;
 }
 
 

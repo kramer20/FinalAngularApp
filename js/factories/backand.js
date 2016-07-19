@@ -1,62 +1,74 @@
-// (function () {
-// 	'use strict';
-// 	angular
-// 		.module('games')
-// 		 .factory('back', function($http,Backand) {
+(function () {
+	'use strict';
+	angular
+		.module('games')
+		 .factory('back', function($http,Backand) {
 
-
-// 		 	var getList = function(name, sort, filter) {
-
-// 		        var data = $http ({
-// 				  method: 'GET',
-// 				  url: "https://api.backand.com:443/1/objects/blogs?sort=%5B%7BfieldName%3A'id'%2Corder%3A'desc'%7D%5D",
-// 				});
-
-// 				return data;
-// 		    }
-
-
-// 		    var searchData = function(search)
-// 		    {
-// 		    	var data = $http ({
-// 				  method: 'GET',
-// 				  url: "https://api.backand.com:443/1/objects/blogs?search="+search,
-// 				});
-
-// 				return data;
-
-// 		    }
-
-// 		    var postBlog = function(data)
-// 		 	{
-// 		 		var gettingData = $http({
-// 				  method: 'POST',
-// 				  data:data,
-// 				  url: Backand.getApiUrl() + '/1/objects/blogs',
-// 				});
-
-// 				return gettingData;
-
-// 		 	}
-
-// 		 	var getSingleBlog = function(data)
-// 		 	{
-// 		 		var gettingData = $http({
-// 				  method: 'GET',
-// 				  url: Backand.getApiUrl() + '/1/objects/blogs/'+data
-// 				});
-
-// 				return gettingData;
-// 		 	}
 
 		 	
-// 		 	return {
-// 		 		getList,
-// 		 		postBlog,
-// 		 		getSingleBlog,
-// 		 		searchData
-// 		 	}
+		 	function getGames(){
+		        var gettingGames = $http({
+		          method: 'GET',
+		          url: 'https://api.backand.com:443/1/objects/games'
+		          });
+
+		        return gettingGames;
+   			}
+
+   			function getSingle(id){
+		        var getDetails = $http({
+		          method: 'GET',
+		          url: 'https://api.backand.com:443/1/objects/games/'+id
+		          });
+
+		        return getDetails;
+   			}
+
+
+		  //   var searchData = function(search)
+		  //   {
+		  //   	var data = $http ({
+				//   method: 'GET',
+				//   url: "https://api.backand.com:443/1/objects/blogs?search="+search,
+				// });
+
+				// return data;
+
+		  //   }
+
+		    function postGame(data){
+		 	
+		 		var makingGame = $http({
+				  method: 'POST',
+				  data:data,
+				  url: 'https://api.backand.com:443/1/objects/games',
+				});
+
+				return makingGame;
+
+		 	}
+
+		 	// var getSingleBlog = function(data)
+		 	// {
+		 	// 	var gettingData = $http({
+				//   method: 'GET',
+				//   url: Backand.getApiUrl() + '/1/objects/blogs/'+data
+				// });
+
+				// return gettingData;
+		 	// }
+
+		 	
+		 	return {
+		 		// getList,
+		 		// postBlog,
+		 		// getSingleBlog,
+		 		// searchData
+		 		getGames:getGames,
+		 		postGame:postGame,
+		 		getSingle:getSingle,
+		 	}
 
 		 
-// 		 });
-// })();
+		 });
+})();

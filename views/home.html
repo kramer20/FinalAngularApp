@@ -1,7 +1,7 @@
 <h2 class="homeTitle">The Games</h2>
 
-	<div class="home row">
+	<div class="home row" ng-repeat="game in controller.games | orderBy:'title'">
 		<div class="col-md-12 allGames">
-			<img>
+			<a href="#/detail/{{game.id}}"><h3 class="gameHmTitle">{{game.title}}</h3></a>
 		</div>
 	</div>

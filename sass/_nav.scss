@@ -6,8 +6,12 @@ ul.navItems{
 		a {
 			text-decoration: none;
 			color:$font-color;
+			font-family: $text-font;
+			font-size: 25px;
+			padding-left: 10px;
 			&:hover {
 				text-decoration: none;
+				color:$dark-blue;
 			}
 		}
 	}
