@@ -1,3 +1,11 @@
+ul.navItems li.navTop {
+  display: inline-block; }
+  ul.navItems li.navTop a {
+    text-decoration: none;
+    color: #FCD707; }
+    ul.navItems li.navTop a:hover {
+      text-decoration: none; }
+
 img.logo {
   width: 140px;
   margin: 0 auto;
