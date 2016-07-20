@@ -1,6 +1,6 @@
 ul.navItems {
   text-align: center;
-  margin-top: 150px; }
+  margin-top: 139px; }
   ul.navItems li.navTop {
     display: inline-block; }
     ul.navItems li.navTop a {
@@ -70,12 +70,17 @@ p.deatFavorite, .deatPlayers, .deatBuzz, .deatSupp, .deatRules {
   margin-right: 30px;
   margin-bottom: 20px; }
 
-h3.favTitle {
-  font-family: "Fugaz One", cursive;
-  text-align: center;
+a.favTitleLink {
+  text-decoration: none;
   color: #03A6DC;
-  text-shadow: 4px 4px #02779E;
-  font-size: 45px; }
+  text-shadow: #02779E; }
+  a.favTitleLink:hover {
+    color: #02779E;
+    text-shadow: #03A6DC; }
+  a.favTitleLink h3.favTitle {
+    font-family: "Fugaz One", cursive;
+    text-align: center;
+    font-size: 40px; }
 
 p.gameFav {
   text-align: center;
