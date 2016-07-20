@@ -11,9 +11,19 @@
 
                showGames.then(function(results){
                   console.log(results);
-                  vm.games = results.data.data;
 
-                  
+                  var results = results.data.data;
+
+                  //if else statement to filter only favorited items
+                  // results = results.filter(function(item){
+                  //       if (item.favorited > 0){
+                  //         return true;
+                  //       }
+                  // })
+
+                  vm.games = results;
+
+                
                })
           }       
         

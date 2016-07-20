@@ -1,7 +1,7 @@
 <!-- <h2 class="favoriteTitle">Favorite Games</h2>
  -->
 	<div class="favorite row">
-		<div class="col-md-12 favGames" ng-repeat="game in controller.games | orderBy:'-favorited'">
+		<div class="col-md-12 favGames" ng-show="game.favorited > 0" ng-repeat="game in controller.games | orderBy:'-favorited'">
 			<a class="favTitleLink" href="#/detail/{{game.id}}"><h3 class="favTitle">{{game.title}}</h3></a>
 			<p class="gameFav">{{game.favorited}} Favorites</p>
 		</div>
