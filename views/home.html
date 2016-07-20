@@ -1,9 +1,13 @@
-<h2 class="homeTitle">The Games</h2>
+<div class="backgroundHome">
+<h2 class="homeTitle">Pick a Game</h2>
 
 	<div class="home row">
 		<div class="col-md-6 allGames" ng-repeat="game in controller.games | orderBy:'title'">
-			<a href="#/detail/{{game.id}}"><h3 class="gameHmTitle">{{game.title}}</h3></a>
-			<i ng-click="controller.favoriteGame(game)" ng-init="count=0" class="fa fa-star-o" aria-hidden="true"></i>
+			<a class="hmTitleLink" href="#/detail/{{game.id}}"><h3 class="gameHmTitle">{{game.title}}</h3></a>
+			<div class="icon">
+				<i ng-click="controller.favoriteGame(game)" ng-init="count=0" class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
 			<p class="favorites">{{game.favorited}} Favorites</p>
 		</div>
 	</div>
+</div>	

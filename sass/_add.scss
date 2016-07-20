@@ -1,0 +1,38 @@
+form {
+	margin-bottom:20px;
+}
+
+h2.addTitle {
+	font-family:$title-font;
+	text-align:center;
+	color:#03A6DC;
+	text-shadow: 4px 4px $dark-blue;
+	font-size:45px;
+	padding-top:20px;
+	margin-bottom:40px;
+}
+
+input.form-control {
+	width:550px;
+	margin:0 auto;
+	margin-bottom:20px;
+	font-family:$text-font;
+	font-size:20px;
+}
+
+textarea.form-control {
+	width:550px;
+	margin:0 auto;
+	margin-bottom:20px;
+	height:300px;
+	font-family:$text-font;
+	font-size:20px;
+}
+
+button.btn {
+	display:block;
+	margin:0 auto;
+	font-family:$text-font;
+	font-size:20px;
+	margin-bottom:20px;
+}

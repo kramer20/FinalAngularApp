@@ -1,14 +1,17 @@
-ul.navItems li.navTop {
-  display: inline-block; }
-  ul.navItems li.navTop a {
-    text-decoration: none;
-    color: #FCD707;
-    font-family: "Dosis", sans-serif;
-    font-size: 25px;
-    padding-left: 10px; }
-    ul.navItems li.navTop a:hover {
+ul.navItems {
+  text-align: center;
+  margin-top: 150px; }
+  ul.navItems li.navTop {
+    display: inline-block; }
+    ul.navItems li.navTop a {
       text-decoration: none;
-      color: #02779E; }
+      color: #FCD707;
+      font-family: "Dosis", sans-serif;
+      font-size: 35px;
+      padding-left: 40px; }
+      ul.navItems li.navTop a:hover {
+        text-decoration: none;
+        color: #02779E; }
 
 img.logo {
   width: 140px;
@@ -16,6 +19,64 @@ img.logo {
   display: inline-block;
   margin-top: 58px;
   margin-bottom: 4px; }
+
+form {
+  margin-bottom: 20px; }
+
+h2.addTitle {
+  font-family: "Fugaz One", cursive;
+  text-align: center;
+  color: #03A6DC;
+  text-shadow: 4px 4px #02779E;
+  font-size: 45px;
+  padding-top: 20px;
+  margin-bottom: 40px; }
+
+input.form-control {
+  width: 550px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px; }
+
+textarea.form-control {
+  width: 550px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 300px;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px; }
+
+button.btn {
+  display: block;
+  margin: 0 auto;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+h3.deatTitle {
+  font-family: "Fugaz One", cursive;
+  text-align: center;
+  color: #03A6DC;
+  text-shadow: 4px 4px #02779E;
+  font-size: 45px; }
+
+p.deatFavorite, .deatPlayers, .deatBuzz, .deatSupp, .deatRules {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 22px;
+  color: #02779E;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px; }
+
+h2.favoriteTitle {
+  font-family: "Fugaz One", cursive;
+  text-align: center;
+  color: #03A6DC;
+  text-shadow: 4px 4px #02779E;
+  font-size: 45px;
+  padding-top: 20px; }
 
 body {
   background: #EEEEEC;
@@ -29,8 +90,53 @@ body {
 h1.appName {
   font-family: "Fugaz One", cursive;
   color: #FCD707;
-  font-size: 40px;
+  font-size: 50px;
   display: inline-block;
   margin-left: 20px;
   margin-right: -40px;
+  margin-top: 0;
   text-shadow: 4px 4px #02779E; }
+
+h2.homeTitle {
+  font-family: "Fugaz One", cursive;
+  text-align: center;
+  color: #03A6DC;
+  text-shadow: 4px 4px #02779E;
+  font-size: 45px;
+  padding-top: 20px; }
+
+.mainView {
+  background-color: rgba(3, 166, 220, 0.2);
+  width: 800px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px #02779E;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+
+a.hmTitleLink {
+  text-decoration: none;
+  color: #03A6DC;
+  background: #03A6DC; }
+  a.hmTitleLink:hover {
+    color: #02779E; }
+  a.hmTitleLink h3.gameHmTitle {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    font-size: 32px; }
+
+.icon {
+  text-align: center; }
+
+i.fa-star-o {
+  color: #02779E;
+  font-size: 30px; }
+  i.fa-star-o:hover {
+    cursor: pointer;
+    color: #d8b703; }
+
+p.favorites {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  color: #03A6DC;
+  margin-bottom: 20px; }

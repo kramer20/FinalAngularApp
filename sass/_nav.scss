@@ -1,14 +1,17 @@
 ul.navItems{
-
+	text-align:center;
+	margin-top:150px;
 	li.navTop {
 		display:inline-block;
+	
 
 		a {
 			text-decoration: none;
 			color:$font-color;
 			font-family: $text-font;
-			font-size: 25px;
-			padding-left: 10px;
+			font-size: 35px;
+			padding-left: 40px;
+			
 			&:hover {
 				text-decoration: none;
 				color:$dark-blue;

@@ -26,7 +26,7 @@
 
    			function favoriteGame(id,favorites){
    				var data = {
-   					favorited: favorites,
+   					favorited: parseInt(favorites)+1,
    				}
 
    				var favoritingGame = $http({

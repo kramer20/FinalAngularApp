@@ -1,0 +1,33 @@
+h3.deatTitle {
+	font-family:$title-font;
+	text-align:center;
+	color:#03A6DC;
+	text-shadow: 4px 4px $dark-blue;
+	font-size:45px;
+	
+
+}
+
+p.deatFavorite,.deatPlayers,.deatBuzz,.deatSupp,.deatRules  {
+	text-align:center;
+	font-family:$text-font;
+	font-size:22px;
+	color:$dark-blue;
+	margin-left: 30px;
+	margin-right:30px;
+	margin-bottom:20px;
+}
+
+// .favoriteStar {
+// 	text-align:center;
+// 	i.fa {
+// 		color:darken($font-color,8);
+// 		font-size:40px;
+// 		display:inline-block;
+// 		font-weight: bold;
+// 		&:hover {
+// 			color:darken($font-color,8);
+// 			cursor:auto;
+// 		}
+// 	}
+// }

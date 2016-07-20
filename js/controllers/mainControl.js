@@ -7,11 +7,11 @@
        var vm = this;
 
        vm.favoriteGame = function(game){
-            var thumb = back.favoriteGame(game.id);
+            var thumb = back.favoriteGame(game.id,game.favorited);
 
             thumb.then(function(response){
-              console.log(response);
-              // game.favorited ++;
+              // console.log(response);
+              game.favorited ++;
             })
           }
 
