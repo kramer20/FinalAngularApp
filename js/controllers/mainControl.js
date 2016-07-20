@@ -11,7 +11,7 @@
 
             thumb.then(function(response){
               console.log(response);
-              game.favorited ++;
+              // game.favorited ++;
             })
           }
 

@@ -24,15 +24,15 @@
 		        return getDetails;
    			}
 
-   			function favoriteGame(id){
+   			function favoriteGame(id,favorites){
    				var data = {
-   					gamesid: id,
+   					favorited: favorites,
    				}
 
    				var favoritingGame = $http({
-		          method: 'POST',
+		          method: 'PUT',
 		          data: data,
-		          url: 'https://api.backand.com:443/1/objects/games',
+		          url: 'https://api.backand.com:443/1/objects/games/'+id,
 		          });
 
 		        return favoritingGame;
