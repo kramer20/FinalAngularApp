@@ -70,13 +70,21 @@ p.deatFavorite, .deatPlayers, .deatBuzz, .deatSupp, .deatRules {
   margin-right: 30px;
   margin-bottom: 20px; }
 
-h2.favoriteTitle {
+h3.favTitle {
   font-family: "Fugaz One", cursive;
   text-align: center;
   color: #03A6DC;
   text-shadow: 4px 4px #02779E;
-  font-size: 45px;
-  padding-top: 20px; }
+  font-size: 45px; }
+
+p.gameFav {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 22px;
+  color: #02779E;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px; }
 
 body {
   background: #EEEEEC;

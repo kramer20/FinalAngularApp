@@ -12,6 +12,8 @@
                showGames.then(function(results){
                   console.log(results);
                   vm.games = results.data.data;
+
+                  
                })
           }       
         
