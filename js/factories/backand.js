@@ -24,6 +24,20 @@
 		        return getDetails;
    			}
 
+   			function favoriteGame(id){
+   				var data = {
+   					gamesid: id,
+   				}
+
+   				var favoritingGame = $http({
+		          method: 'POST',
+		          data: data,
+		          url: 'https://api.backand.com:443/1/objects/games/vote'
+		          });
+
+		        return favoritingGame;
+		    }  
+   			
 
 		  //   var searchData = function(search)
 		  //   {
@@ -67,6 +81,7 @@
 		 		getGames:getGames,
 		 		postGame:postGame,
 		 		getSingle:getSingle,
+		 		favoriteGame:favoriteGame,
 		 	}
 
 		 
