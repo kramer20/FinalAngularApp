@@ -4,6 +4,6 @@
 		<div class="col-md-6 allGames" ng-repeat="game in controller.games | orderBy:'title'">
 			<a href="#/detail/{{game.id}}"><h3 class="gameHmTitle">{{game.title}}</h3></a>
 			<i ng-click="controller.favoriteGame(game)" ng-init="count=0" class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-			<p class="favorites"> Favorites</p>
+			<p class="favorites">{{game.favorited}} Favorites</p>
 		</div>
 	</div>

@@ -9,7 +9,7 @@
 		 	function getGames(){
 		        var gettingGames = $http({
 		          method: 'GET',
-		          url: 'https://api.backand.com:443/1/objects/games'
+		          url: 'https://api.backand.com:443/1/objects/games',
 		          });
 
 		        return gettingGames;
@@ -18,7 +18,7 @@
    			function getSingle(id){
 		        var getDetails = $http({
 		          method: 'GET',
-		          url: 'https://api.backand.com:443/1/objects/games/'+id
+		          url: 'https://api.backand.com:443/1/objects/games/'+id,
 		          });
 
 		        return getDetails;
@@ -32,7 +32,7 @@
    				var favoritingGame = $http({
 		          method: 'POST',
 		          data: data,
-		          url: 'https://api.backand.com:443/1/objects/games/vote'
+		          url: 'https://api.backand.com:443/1/objects/games',
 		          });
 
 		        return favoritingGame;
